@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#hamburger-icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 150px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger-icon span, #hamburger-icon span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+
+#hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3) {
+  top: 18px;
+}
+
+#hamburger-icon span:nth-child(4) {
+  top: 36px;
+}
+
+#hamburger-icon.open {
+  z-index: 3;
+}
+#hamburger-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.wrapper {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#sidebar {
+  background-color: rgba(255, 255, 255, .85);
+  position: fixed;
+  width: 100vw;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 0%;
+  visibility: hidden;
+  z-index: 2;
+  transition: .5s;
+}
+#sidebar.visible {
+  height: 100%;
+  visibility: visible;
+}
+#sidebar a img {
+  width: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  bottom: 50px;
+}
+body img {
+  width: 170px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 200px;
+}
