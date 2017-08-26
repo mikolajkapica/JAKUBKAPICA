@@ -19,7 +19,7 @@ h1 {
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 150px auto;
+  margin: 10px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -124,5 +124,5 @@ body img {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 200px;
+  bottom: 10px;
 }
